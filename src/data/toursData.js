@@ -12,6 +12,8 @@ export const OWNER_INFO = {
   rating: "4.9",
   reviewsCount: "250+",
   fleetNotice: "Auto Riksha & 4-Wheeler Car service provided as per number of persons",
+  website: "https://www.dwarkadarshantour.com",
+  domain: "www.dwarkadarshantour.com",
 };
 
 export const DWARKA_DARSHAN = {

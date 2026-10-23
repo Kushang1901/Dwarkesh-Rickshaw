@@ -62,9 +62,12 @@ export default function Footer() {
               </div>
             </div>
             <p style={{ fontSize: "0.875rem", color: "#475569", lineHeight: 1.6, marginBottom: "16px" }}>
-              Trusted pilgrimage & local sightseeing auto-rickshaw service in Devbhumi Dwarka. Dedicated to providing holy, comfortable, and punctually guided temple tours.
+              Trusted pilgrimage & local sightseeing auto-rickshaw & car service in Devbhumi Dwarka. Dedicated to providing holy, comfortable, and punctually guided temple tours.
             </p>
-
+            <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", backgroundColor: "#fffbeb", padding: "6px 12px", borderRadius: "9999px", border: "1px solid #fde68a", fontSize: "0.8rem", color: "#b45309", fontWeight: 600 }}>
+              <span>🌐 Official Website:</span>
+              <span style={{ color: "#d97706" }}>www.dwarkadarshantour.com</span>
+            </div>
           </div>
 
           {/* Col 2: Tour Packages & Shifts */}
