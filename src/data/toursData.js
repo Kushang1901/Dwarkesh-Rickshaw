@@ -179,6 +179,7 @@ export const SOMNATH_DARSHAN = {
       id: "harsiddhi-temple",
       name: "Harsiddhi Temple",
       nameHindi: "हरसिद्धि मंदिर",
+      image: "/somnath-darshan/harshiddhi.jpg",
       category: "Kuldevi Shaktipeeth",
       description:
         "Sacred hilltop and foothill temple of Goddess Harsiddhi (Mata Ambaji) at Miyani, revered by King Vikramaditya and coastal sea mariners for centuries.",
@@ -191,6 +192,7 @@ export const SOMNATH_DARSHAN = {
       id: "mul-dwarka",
       name: "Mul Dwarka",
       nameHindi: "मुल द्वारका",
+      image: "/somnath-darshan/mul-dwarka.jpg",
       category: "Historic Pilgrimage",
       description:
         "The original coastal landing spot where Lord Krishna and Yadavs first set foot before establishing Devbhumi Dwarka. Features an ancient well and temple complex.",
@@ -203,6 +205,7 @@ export const SOMNATH_DARSHAN = {
       id: "sudama-temple",
       name: "Sudama Temple",
       nameHindi: "सुदामा मंदिर",
+      image: "/somnath-darshan/sudama-temple.jpg",
       category: "Friendship Shrine",
       description:
         "The world's only notable temple dedicated to Sudama, the beloved childhood friend and supreme devotee of Lord Krishna, celebrating true selfless friendship.",
@@ -215,6 +218,7 @@ export const SOMNATH_DARSHAN = {
       id: "gandhi-birth-place",
       name: "Gandhi Birth Place (Kirti Mandir)",
       nameHindi: "गांधी जन्म स्थान",
+      image: "/somnath-darshan/gandhi-birth-place.jpg",
       category: "National Memorial",
       description:
         "Kirti Mandir, the ancestral house where Mahatma Gandhi was born on 2nd October 1869. Includes a peaceful museum, photo gallery, and library.",
@@ -227,6 +231,7 @@ export const SOMNATH_DARSHAN = {
       id: "bhalka-tirth",
       name: "Bhalka Tirth",
       nameHindi: "भालका तीर्थ",
+      image: "/somnath-darshan/bhalka-tirth.jpg",
       category: "Sacred Dehotsarg",
       description:
         "The deeply holy spot under a banyan tree where Lord Krishna rested his divine form and completed his earthly incarnation (Dwapar Yuga).",
@@ -239,6 +244,7 @@ export const SOMNATH_DARSHAN = {
       id: "somnath-temple",
       name: "Somnath Jyotirling",
       nameHindi: "सोमनाथ ज्योतिर्लिंग",
+      image: "/somnath-darshan/somnath-temple.jpg",
       category: "First Jyotirlinga",
       description:
         "The eternal shrine of Lord Shiva, revered as the foremost among the 12 Jyotirlingas. Stands grandly at the confluence of oceans, known as 'The Shrine Eternal'.",
