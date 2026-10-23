@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { OWNER_INFO, DWARKA_DARSHAN } from "@/data/toursData";
+import { OWNER_INFO, DWARKA_DARSHAN, DWARKA_CENTRAL_SHRINES } from "@/data/toursData";
 import { useBooking } from "@/context/BookingContext";
 import PlaceCard from "@/components/PlaceCard";
 import {
@@ -230,6 +230,169 @@ export default function DwarkaDarshanPage() {
                 Call Directly {OWNER_INFO.phoneFormatted}
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION: SACRED TOWN SHRINES (STARTING POINT & HEART OF DWARKA) */}
+      <section style={{ padding: "60px 0 32px", backgroundColor: "#ffffff" }}>
+        <div className="container">
+          <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 36px" }}>
+            <span className="section-tag" style={{ backgroundColor: "#fffbeb", color: "#b45309", borderColor: "#fde68a" }}>
+              <Sparkles size={13} color="#d97706" /> SACRED HEART OF DEVBHUMI DWARKA
+            </span>
+            <h2 className="section-title">
+              Town Center Sacred Shrines &amp; Starting Hub
+            </h2>
+            <p className="section-subtitle" style={{ margin: "0 auto" }}>
+              Every holy pilgrimage begins at the feet of Lord Dwarkadhish and the holy waters of Gomti Ghat. Our vehicles pick you up directly from Teen Batti Chowk stand or your hotel nearby.
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gap: "28px",
+              marginBottom: "16px",
+            }}
+          >
+            {DWARKA_CENTRAL_SHRINES.map((shrine) => (
+              <div
+                key={shrine.id}
+                className="card-white"
+                style={{
+                  borderRadius: "18px",
+                  overflow: "hidden",
+                  border: "1px solid #e2e8f0",
+                  backgroundColor: "#ffffff",
+                  boxShadow: "0 4px 12px rgba(15, 23, 42, 0.05)",
+                  display: "flex",
+                  flexDirection: "column",
+                  transition: "all 0.3s ease",
+                }}
+              >
+                <div style={{ position: "relative", height: "240px", overflow: "hidden", backgroundColor: "#f1f5f9" }}>
+                  <img
+                    src={shrine.image}
+                    alt={`${shrine.name} - ${shrine.nameHindi}`}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      display: "block",
+                      transition: "transform 0.5s ease",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = "scale(1.05)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "scale(1)";
+                    }}
+                  />
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      background: "linear-gradient(to top, rgba(15, 23, 42, 0.6) 0%, transparent 55%)",
+                      pointerEvents: "none",
+                    }}
+                  />
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "14px",
+                      left: "14px",
+                      backgroundColor: "rgba(255, 255, 255, 0.95)",
+                      backdropFilter: "blur(6px)",
+                      padding: "5px 12px",
+                      borderRadius: "9999px",
+                      fontSize: "0.75rem",
+                      fontWeight: 800,
+                      color: "#b45309",
+                      border: "1px solid #fde68a",
+                    }}
+                  >
+                    {shrine.category}
+                  </div>
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "14px",
+                      right: "14px",
+                      backgroundColor: "rgba(255, 255, 255, 0.95)",
+                      backdropFilter: "blur(6px)",
+                      padding: "5px 12px",
+                      borderRadius: "9999px",
+                      fontSize: "0.72rem",
+                      fontWeight: 700,
+                      color: "#166534",
+                      border: "1px solid #bbf7d0",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "4px",
+                    }}
+                  >
+                    <Sparkles size={11} color="#16a34a" />
+                    <span>{shrine.badge}</span>
+                  </div>
+                  <div style={{ position: "absolute", bottom: "12px", left: "16px", right: "16px", color: "#ffffff", pointerEvents: "none" }}>
+                    <div style={{ fontSize: "0.95rem", fontWeight: 700, color: "#fef3c7", textShadow: "0 1px 4px rgba(0,0,0,0.8)" }}>
+                      {shrine.nameHindi}
+                    </div>
+                  </div>
+                </div>
+
+                <div style={{ padding: "24px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
+                  <h3 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#0f172a", marginBottom: "8px" }}>
+                    {shrine.name}
+                  </h3>
+                  <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.82rem", color: "#64748b", marginBottom: "14px" }}>
+                    <MapPin size={14} color="#d97706" />
+                    <span>{shrine.location} • Stand / Hotel Pickup Available</span>
+                  </div>
+                  <p style={{ fontSize: "0.9rem", color: "#475569", lineHeight: 1.6, marginBottom: "16px", flexGrow: 1 }}>
+                    {shrine.description}
+                  </p>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "18px" }}>
+                    {shrine.highlights.map((h, i) => (
+                      <span
+                        key={i}
+                        style={{
+                          fontSize: "0.75rem",
+                          padding: "4px 9px",
+                          borderRadius: "6px",
+                          backgroundColor: "#f8fafc",
+                          border: "1px solid #e2e8f0",
+                          color: "#334155",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "4px",
+                        }}
+                      >
+                        <CheckCircle2 size={11} color="#16a34a" />
+                        {h}
+                      </span>
+                    ))}
+                  </div>
+                  <button
+                    onClick={() => openBooking(`Dwarka Tour - ${shrine.name}`)}
+                    className="btn-whatsapp"
+                    style={{
+                      width: "100%",
+                      padding: "10px",
+                      fontSize: "0.85rem",
+                      borderRadius: "10px",
+                      justifyContent: "center",
+                      fontWeight: 700,
+                    }}
+                  >
+                    <MessageCircle size={15} />
+                    Inquire Pickup on WhatsApp
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

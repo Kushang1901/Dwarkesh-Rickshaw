@@ -34,6 +34,7 @@ export const DWARKA_DARSHAN = {
       id: "nageshwar",
       name: "Nageswar Jyotirling",
       nameHindi: "नागेश्वर ज्योतिर्लिंग",
+      image: "/Dwarka-darshan/nageshwar.jpg",
       category: "Sacred Temple",
       description:
         "One of the 12 sacred Jyotirlingas of Lord Shiva. Features a towering 80-foot statue of Lord Shiva in seated posture and divine underground sanctum.",
@@ -46,6 +47,7 @@ export const DWARKA_DARSHAN = {
       id: "gopi-talab",
       name: "Gopi Talab",
       nameHindi: "गोपी तालाब",
+      image: "/Dwarka-darshan/gopitalav.jpg",
       category: "Holy Lake",
       description:
         "The sacred pond where Gopis united with Lord Krishna during Raas Leela. Famed for its smooth yellow-white clay known as Gopi Chandan.",
@@ -58,6 +60,7 @@ export const DWARKA_DARSHAN = {
       id: "bet-dwarka",
       name: "Bet Dwarka",
       nameHindi: "बेट द्वारका",
+      image: "/Dwarka-darshan/beyt-dwk.jpg",
       category: "Island & Residence",
       description:
         "The historic island residence of Lord Krishna (Shankhodhar). Reached via the magnificent Sudarshan Setu cable bridge or scenic ferry ride from Okha.",
@@ -70,6 +73,7 @@ export const DWARKA_DARSHAN = {
       id: "rukmani-temple",
       name: "Rukmani Temple",
       nameHindi: "रुक्मणी मंदिर",
+      image: "/Dwarka-darshan/rukmani_temple.jpg",
       category: "Ancient Shrine",
       description:
         "2,500-year-old architectural marvel dedicated to Goddess Rukmini, Lord Krishna's chief queen, featuring intricate mythological stone carvings.",
@@ -82,6 +86,7 @@ export const DWARKA_DARSHAN = {
       id: "shivrajpur-beach",
       name: "Shivrajpur Beach",
       nameHindi: "शिवराजपुर बीच",
+      image: "/Dwarka-darshan/shivrajpur.jpg",
       category: "Blue Flag Beach",
       description:
         "Internationally certified Blue Flag beach known for crystal-clear turquoise waters, white sand, clean shores, and thrilling water adventures.",
@@ -94,6 +99,7 @@ export const DWARKA_DARSHAN = {
       id: "bhadkeshwar-mahadev",
       name: "Bhadkeshwar Mahadev",
       nameHindi: "भड़केश्वर महादेव",
+      image: "/Dwarka-darshan/bhadkeshwar_temple.jpg",
       category: "Sea Cliff Temple",
       description:
         "Perched atop a natural rock hillock surrounded on all three sides by the roaring Arabian Sea. The temple sanctum is naturally bathed by high sea tides during monsoon.",
@@ -106,6 +112,7 @@ export const DWARKA_DARSHAN = {
       id: "sunset-point",
       name: "Sunset Point",
       nameHindi: "सनसेट पोइन्ट",
+      image: "/Dwarka-darshan/sunset.jpg",
       category: "Viewpoint",
       description:
         "Breathtaking coastal cliff edge overlooking the endless western sea horizon, offering golden panoramic views of the Arabian Sea sunset.",
@@ -115,19 +122,47 @@ export const DWARKA_DARSHAN = {
       gradient: "from-orange-500 to-amber-600"
     },
     {
-      id: "geeta-mandir",
-      name: "Geeta Mandir",
-      nameHindi: "गीता मंदिर",
+      id: "gayatri-temple",
+      name: "Gayatri Temple & Geeta Mandir",
+      nameHindi: "गायत्री मंदिर एवं गीता मंदिर",
+      image: "/Dwarka-darshan/gayatri_temple.jpg",
       category: "Sacred Temple",
       description:
-        "Magnificent marble temple built by the Birla family, with all 18 chapters of the holy Bhagavad Gita engraved delicately on the marble walls.",
+        "Sacred seaside temple complex dedicated to Goddess Gayatri (Veda Mata) and the revered Gita Mandir with divine verses of the Bhagavad Gita on marble walls overlooking the ocean.",
       timeToSpend: "25 mins",
-      highlights: ["Complete Gita Engraved", "Pure White Marble", "Peaceful Meditation Hall"],
+      highlights: ["Maa Gayatri Shrine", "Holy Gita Inscriptions", "Peaceful Coastal Sanctum"],
       badge: "Peaceful",
       gradient: "from-amber-600 to-yellow-600"
     },
   ],
 };
+
+export const DWARKA_CENTRAL_SHRINES = [
+  {
+    id: "dwarkadhish-temple",
+    name: "Shree Dwarkadhish Temple (Jagat Mandir)",
+    nameHindi: "श्री द्वारकाधीश जगत मंदिर",
+    image: "/Dwarka-darshan/Dwarka_temple.jpg",
+    category: "Main Pilgrimage Shrine",
+    description:
+      "The supreme 2,200+ year-old 5-storey spire temple dedicated to Lord Krishna, King of Dwarka. Crowned with the sacred 52-yard flag (Dhwaja) fluttering majestically over the Arabian Sea.",
+    highlights: ["Chardham Pilgrimage", "52-Yard Holy Dhwaja", "Mokshapuri Sanctum", "Lord of Dwarka"],
+    badge: "Supreme Shrine",
+    location: "Dwarka Town Center",
+  },
+  {
+    id: "gomti-ghat",
+    name: "Sacred Gomti Ghat & Sangam",
+    nameHindi: "गोमती घाट एवं संगम",
+    image: "/Dwarka-darshan/gomti-ghat.jpg",
+    category: "Holy Bathing Ghat",
+    description:
+      "The divine confluence where the sacred Gomti River meets the Arabian Sea. Devotees take holy snan (spiritual bath) on the 56 steps before proceeding for Darshan.",
+    highlights: ["56 Sacred Steps", "Gomti Sea Confluence", "Chakra Tirth & Daily Aarti", "Holy Snan"],
+    badge: "Holy Snan Ghat",
+    location: "Dwarka Coastline",
+  },
+];
 
 export const SOMNATH_DARSHAN = {
   id: "somnath-darshan",

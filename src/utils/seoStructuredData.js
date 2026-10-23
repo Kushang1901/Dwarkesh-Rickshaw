@@ -175,6 +175,7 @@ export function getDwarkaDarshanTripSchema() {
           name: place.name,
           alternateName: place.nameHindi,
           description: place.description,
+          image: place.image ? `${SITE_URL}${place.image}` : undefined,
         },
       })),
     },

@@ -1,11 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Clock, MapPin, CheckCircle2, Sparkles } from "lucide-react";
 import { useBooking } from "@/context/BookingContext";
 
 export default function PlaceCard({ place, tourTitle = "Dwarka Darshan", index }) {
   const { openBooking } = useBooking();
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
+
+  const hasImage = place.image && !imageError;
 
   return (
     <div
@@ -18,73 +22,237 @@ export default function PlaceCard({ place, tourTitle = "Dwarka Darshan", index }
         overflow: "hidden",
         border: "1px solid #e2e8f0",
         backgroundColor: "#ffffff",
-        transition: "all 0.25s ease",
+        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        boxShadow: "0 2px 6px rgba(15, 23, 42, 0.04)",
       }}
     >
-      {/* Top Banner with Spot Index & Category */}
-      <div
-        style={{
-          padding: "16px 20px 12px",
-          borderBottom: "1px solid #f1f5f9",
-          backgroundColor: "#fbfcfd",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <span
+      {/* Visual Image Section */}
+      {hasImage ? (
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: "210px",
+            backgroundColor: "#f1f5f9",
+            overflow: "hidden",
+          }}
+        >
+          {/* Skeleton loading background */}
+          {!imageLoaded && (
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                backgroundColor: "#f1f5f9",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "#94a3b8",
+                fontSize: "0.8rem",
+              }}
+            >
+              Loading photo...
+            </div>
+          )}
+
+          <img
+            src={place.image}
+            alt={`${place.name} - ${place.nameHindi || ""} Dwarka Darshan`}
+            loading="lazy"
+            onLoad={() => setImageLoaded(true)}
+            onError={() => setImageError(true)}
             style={{
-              width: "28px",
-              height: "28px",
-              borderRadius: "50%",
-              backgroundColor: "#fffbeb",
-              color: "#b45309",
-              fontSize: "0.8125rem",
-              fontWeight: 800,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              display: "block",
+              transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+              opacity: imageLoaded ? 1 : 0,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.06)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+            }}
+          />
+
+          {/* Dark gradient overlay at bottom of photo for contrast */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background:
+                "linear-gradient(to top, rgba(15, 23, 42, 0.55) 0%, rgba(15, 23, 42, 0.0) 50%, rgba(15, 23, 42, 0.3) 100%)",
+              pointerEvents: "none",
+            }}
+          />
+
+          {/* Spot Index & Category floating pill */}
+          <div
+            style={{
+              position: "absolute",
+              top: "12px",
+              left: "12px",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid #fef3c7",
-            }}
-          >
-            {index + 1}
-          </span>
-          <span
-            style={{
-              fontSize: "0.75rem",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              letterSpacing: "0.05em",
-              color: "#475569",
-            }}
-          >
-            {place.category}
-          </span>
-        </div>
-
-        {place.badge && (
-          <span
-            style={{
-              fontSize: "0.7rem",
-              fontWeight: 700,
-              padding: "3px 8px",
+              gap: "6px",
+              backgroundColor: "rgba(255, 255, 255, 0.95)",
+              backdropFilter: "blur(6px)",
+              padding: "4px 10px",
               borderRadius: "9999px",
-              backgroundColor: "#f0fdf4",
-              color: "#166534",
-              border: "1px solid #bbf7d0",
-              display: "flex",
-              alignItems: "center",
-              gap: "4px",
+              boxShadow: "0 2px 6px rgba(0, 0, 0, 0.15)",
+              border: "1px solid rgba(254, 243, 199, 0.8)",
             }}
           >
-            <Sparkles size={11} />
-            {place.badge}
-          </span>
-        )}
-      </div>
+            {typeof index === "number" && (
+              <span
+                style={{
+                  width: "20px",
+                  height: "20px",
+                  borderRadius: "50%",
+                  backgroundColor: "#d97706",
+                  color: "#ffffff",
+                  fontSize: "0.75rem",
+                  fontWeight: 800,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                {index + 1}
+              </span>
+            )}
+            <span
+              style={{
+                fontSize: "0.7rem",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "0.05em",
+                color: "#1e293b",
+              }}
+            >
+              {place.category}
+            </span>
+          </div>
 
-      {/* Content */}
+          {/* Badge pill */}
+          {place.badge && (
+            <div
+              style={{
+                position: "absolute",
+                top: "12px",
+                right: "12px",
+                display: "flex",
+                alignItems: "center",
+                gap: "4px",
+                backgroundColor: "rgba(255, 255, 255, 0.95)",
+                backdropFilter: "blur(6px)",
+                padding: "4px 10px",
+                borderRadius: "9999px",
+                fontSize: "0.7rem",
+                fontWeight: 700,
+                color: "#166534",
+                boxShadow: "0 2px 6px rgba(0, 0, 0, 0.15)",
+                border: "1px solid rgba(187, 247, 208, 0.8)",
+              }}
+            >
+              <Sparkles size={11} color="#16a34a" />
+              <span>{place.badge}</span>
+            </div>
+          )}
+
+          {/* Bottom title in photo */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: "10px",
+              left: "14px",
+              right: "14px",
+              color: "#ffffff",
+              pointerEvents: "none",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "0.85rem",
+                fontWeight: 600,
+                color: "#fef3c7",
+                textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+              }}
+            >
+              {place.nameHindi}
+            </div>
+          </div>
+        </div>
+      ) : (
+        /* Top Banner fallback when no image is available */
+        <div
+          style={{
+            padding: "16px 20px 12px",
+            borderBottom: "1px solid #f1f5f9",
+            backgroundColor: "#fbfcfd",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            {typeof index === "number" && (
+              <span
+                style={{
+                  width: "28px",
+                  height: "28px",
+                  borderRadius: "50%",
+                  backgroundColor: "#fffbeb",
+                  color: "#b45309",
+                  fontSize: "0.8125rem",
+                  fontWeight: 800,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  border: "1px solid #fef3c7",
+                }}
+              >
+                {index + 1}
+              </span>
+            )}
+            <span
+              style={{
+                fontSize: "0.75rem",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "0.05em",
+                color: "#475569",
+              }}
+            >
+              {place.category}
+            </span>
+          </div>
+
+          {place.badge && (
+            <span
+              style={{
+                fontSize: "0.7rem",
+                fontWeight: 700,
+                padding: "3px 8px",
+                borderRadius: "9999px",
+                backgroundColor: "#f0fdf4",
+                color: "#166534",
+                border: "1px solid #bbf7d0",
+                display: "flex",
+                alignItems: "center",
+                gap: "4px",
+              }}
+            >
+              <Sparkles size={11} />
+              {place.badge}
+            </span>
+          )}
+        </div>
+      )}
+
+      {/* Card Content Body */}
       <div style={{ padding: "20px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
         {/* Title in English & Hindi */}
         <div style={{ marginBottom: "12px" }}>
@@ -98,16 +266,18 @@ export default function PlaceCard({ place, tourTitle = "Dwarka Darshan", index }
           >
             {place.name}
           </h3>
-          <div
-            style={{
-              fontSize: "1rem",
-              fontWeight: 600,
-              color: "#d97706",
-              marginTop: "2px",
-            }}
-          >
-            {place.nameHindi}
-          </div>
+          {!hasImage && place.nameHindi && (
+            <div
+              style={{
+                fontSize: "1rem",
+                fontWeight: 600,
+                color: "#d97706",
+                marginTop: "2px",
+              }}
+            >
+              {place.nameHindi}
+            </div>
+          )}
         </div>
 
         {/* Location or Time recommendation */}
@@ -150,7 +320,7 @@ export default function PlaceCard({ place, tourTitle = "Dwarka Darshan", index }
 
         {/* Key Highlights list */}
         {place.highlights && place.highlights.length > 0 && (
-          <div style={{ marginBottom: "16px" }}>
+          <div style={{ marginBottom: "18px" }}>
             <div
               style={{
                 fontSize: "0.75rem",
@@ -169,7 +339,7 @@ export default function PlaceCard({ place, tourTitle = "Dwarka Darshan", index }
                   key={i}
                   style={{
                     fontSize: "0.75rem",
-                    padding: "3px 8px",
+                    padding: "4px 9px",
                     borderRadius: "6px",
                     backgroundColor: "#f8fafc",
                     border: "1px solid #e2e8f0",
@@ -189,15 +359,16 @@ export default function PlaceCard({ place, tourTitle = "Dwarka Darshan", index }
 
         {/* Action Button */}
         <button
-          onClick={() => openBooking(tourTitle)}
+          onClick={() => openBooking(`${tourTitle} - ${place.name}`)}
           className="btn-outline"
           style={{
             width: "100%",
-            padding: "9px 12px",
-            fontSize: "0.8125rem",
-            borderRadius: "8px",
+            padding: "10px 12px",
+            fontSize: "0.85rem",
+            borderRadius: "10px",
             justifyContent: "center",
             marginTop: "auto",
+            fontWeight: 700,
           }}
         >
           Book This Tour via WhatsApp
