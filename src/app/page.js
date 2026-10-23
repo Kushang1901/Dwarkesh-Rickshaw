@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { OWNER_INFO, DWARKA_DARSHAN, SOMNATH_DARSHAN, WHY_CHOOSE_US, TESTIMONIALS, FAQS } from "@/data/toursData";
 import { useBooking } from "@/context/BookingContext";
-import PlaceCard from "@/components/PlaceCard";
 import {
   Phone,
   MessageCircle,
@@ -15,7 +14,6 @@ import {
   ChevronRight,
   ShieldCheck,
   Search,
-  Compass,
   ArrowRight,
   Sparkles,
   Car,
@@ -582,52 +580,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION: SPOTLIGHT ON POPULAR PLACES */}
-      <section style={{ padding: "72px 0", backgroundColor: "#f8fafc", borderBottom: "1px solid #e2e8f0" }}>
-        <div className="container">
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "flex-end",
-              justifyContent: "space-between",
-              gap: "20px",
-              marginBottom: "40px",
-            }}
-          >
-            <div>
-              <span className="section-tag">
-                <Compass size={13} /> PLACES HIGHLIGHT
-              </span>
-              <h2 className="section-title">
-                Sacred & Scenic Highlights
-              </h2>
-              <p className="section-subtitle" style={{ marginBottom: 0 }}>
-                A glimpse of the revered temples and beaches you will visit.
-              </p>
-            </div>
-            <Link
-              href="/dwarka-darshan"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                color: "#d97706",
-                fontWeight: 700,
-                fontSize: "0.9375rem",
-              }}
-            >
-              View all 8 Dwarka spots <ArrowRight size={16} />
-            </Link>
-          </div>
 
-          <div className="highlights-grid-2x2">
-            {DWARKA_DARSHAN.places.slice(0, 4).map((place, idx) => (
-              <PlaceCard key={place.id} place={place} index={idx} tourTitle={DWARKA_DARSHAN.title} />
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* SECTION: WHY CHOOSE US */}
       <section style={{ padding: "72px 0", backgroundColor: "#ffffff", borderBottom: "1px solid #e2e8f0" }}>
