@@ -1,6 +1,6 @@
 export const OWNER_INFO = {
   name: "Ashokbhai Chavda",
-  businessName: "Dwarkesh Riksha & Tour Service",
+  businessName: "Dwarkesh Tour",
   tagline: "Dwarka & Somnath Darshan Tour Service (Auto Riksha & 4-Wheeler)",
   phone: "99981 51725",
   phoneFormatted: "+91 99981 51725",

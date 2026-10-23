@@ -1,9 +1,11 @@
 import "./globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
 import { BookingProvider } from "@/context/BookingContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
 import FloatingActions from "@/components/FloatingActions";
+import PageLoader from "@/components/PageLoader";
 
 export const metadata = {
   title: "Dwarkesh Riksha | Dwarka & Somnath Darshan Tour Service",
@@ -32,13 +34,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <BookingProvider>
-          <Navbar />
-          <main style={{ minHeight: "80vh" }}>{children}</main>
-          <Footer />
-          <BookingModal />
-          <FloatingActions />
-        </BookingProvider>
+        <LanguageProvider>
+          <BookingProvider>
+            <PageLoader />
+            <Navbar />
+            <main style={{ minHeight: "80vh" }}>{children}</main>
+            <Footer />
+            <BookingModal />
+            <FloatingActions />
+          </BookingProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

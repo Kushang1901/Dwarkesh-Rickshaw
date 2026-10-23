@@ -22,13 +22,44 @@ export default function ContactPage() {
       {/* HEADER */}
       <section
         style={{
-          backgroundColor: "#f8fafc",
+          position: "relative",
+          backgroundColor: "#ffffff",
           borderBottom: "1px solid #e2e8f0",
-          padding: "60px 0 50px",
+          padding: "72px 0 60px",
+          minHeight: "440px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           textAlign: "center",
+          overflow: "hidden",
         }}
       >
-        <div className="container">
+        {/* Background Sketch Layer */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            backgroundImage: "url('/hero-bg-4.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center 65%",
+            backgroundRepeat: "no-repeat",
+            opacity: 0.85,
+            pointerEvents: "none",
+          }}
+        />
+
+        {/* Soft Central Radial Halo for Text Contrast */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "radial-gradient(ellipse 75% 75% at 50% 50%, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.62) 50%, rgba(255, 255, 255, 0.12) 100%)",
+            pointerEvents: "none",
+          }}
+        />
+
+        <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ maxWidth: "780px", margin: "0 auto" }}>
             <span className="section-tag" style={{ display: "inline-flex", marginBottom: "16px" }}>
               <MapPin size={13} /> STAND &amp; CONTACT

@@ -27,13 +27,40 @@ export default function DwarkaDarshanPage() {
       {/* HEADER SECTION */}
       <section
         style={{
+          position: "relative",
           backgroundColor: "#fffbeb",
           borderBottom: "1px solid #fef3c7",
-          padding: "60px 0 50px",
+          padding: "68px 0 55px",
           textAlign: "center",
+          overflow: "hidden",
         }}
       >
-        <div className="container">
+        {/* Background Sketch Layer */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            backgroundImage: "url('/hero-bg-2.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center 28%",
+            backgroundRepeat: "no-repeat",
+            opacity: 0.78,
+            pointerEvents: "none",
+          }}
+        />
+
+        {/* Soft Central Radial Halo for Contrast & Sacred Saffron Tint */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "radial-gradient(ellipse 85% 80% at 50% 50%, rgba(255, 251, 235, 0.90) 0%, rgba(255, 251, 235, 0.65) 55%, rgba(255, 251, 235, 0.20) 100%)",
+            pointerEvents: "none",
+          }}
+        />
+
+        <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <div style={{ maxWidth: "820px", margin: "0 auto" }}>
             <div
               style={{

@@ -17,6 +17,7 @@ import {
   Sparkles,
   Car,
 } from "lucide-react";
+import LanguageSelector from "@/components/LanguageSelector";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -97,34 +98,52 @@ export default function Navbar() {
         <Link
           href="/"
           onClick={() => setMobileMenuOpen(false)}
-          style={{ display: "flex", alignItems: "center", gap: "10px" }}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+            minWidth: 0,
+            flex: "1 1 auto",
+            marginRight: "12px",
+          }}
         >
           <div
             style={{
-              width: "42px",
-              height: "42px",
-              borderRadius: "12px",
+              width: "44px",
+              height: "44px",
+              borderRadius: "50%",
+              overflow: "hidden",
+              border: "1.5px solid #fde68a",
+              boxShadow: "0 2px 6px rgba(217, 119, 6, 0.15)",
+              flexShrink: 0,
               backgroundColor: "#fffbeb",
-              border: "1px solid #fef3c7",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: "1.45rem",
-              boxShadow: "0 2px 4px rgba(217, 119, 6, 0.1)",
-              flexShrink: 0,
             }}
           >
-            <Compass size={22} color="#d97706" />
+            <img
+              src="/logo.jpg"
+              alt="Dwarkesh Riksha & Tour Service Logo"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
           </div>
-          <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <div style={{ minWidth: 0, overflow: "hidden" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "6px", flexWrap: "nowrap" }}>
               <span
                 style={{
-                  fontSize: "1.2rem",
+                  fontSize: "clamp(0.95rem, 3.8vw, 1.2rem)",
                   fontWeight: 900,
                   color: "#0f172a",
                   letterSpacing: "-0.02em",
                   whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
                 }}
               >
                 {OWNER_INFO.businessName}
@@ -137,6 +156,7 @@ export default function Navbar() {
                   color: "#b45309",
                   padding: "2px 7px",
                   borderRadius: "5px",
+                  flexShrink: 0,
                 }}
               >
                 द्वारका
@@ -145,8 +165,8 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Desktop Navigation Links */}
-        <nav className="desktop-nav" style={{ display: "none", alignItems: "center", gap: "28px" }}>
+        {/* Desktop Navigation Links - Aligned to the Right */}
+        <nav className="desktop-nav" style={{ alignItems: "center", gap: "32px", marginLeft: "auto" }}>
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -154,8 +174,8 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 style={{
-                  fontSize: "0.9375rem",
-                  fontWeight: isActive ? 700 : 500,
+                  fontSize: "0.95rem",
+                  fontWeight: isActive ? 700 : 600,
                   color: isActive ? "#d97706" : "#334155",
                   transition: "color 0.15s",
                 }}
@@ -164,36 +184,8 @@ export default function Navbar() {
               </Link>
             );
           })}
+          <LanguageSelector variant="navbar" />
         </nav>
-
-        {/* Desktop Action Buttons (Hidden on mobile) */}
-        <div className="desktop-actions" style={{ display: "none", alignItems: "center", gap: "10px" }}>
-          <a
-            href={`tel:+91${OWNER_INFO.phone.replace(/\s+/g, "")}`}
-            className="btn-outline"
-            style={{
-              padding: "9px 16px",
-              fontSize: "0.875rem",
-              borderRadius: "8px",
-            }}
-          >
-            <Phone size={15} color="#2563eb" />
-            <span>Call Directly</span>
-          </a>
-
-          <button
-            onClick={() => openBooking("Dwarka Darshan")}
-            className="btn-whatsapp"
-            style={{
-              padding: "9px 18px",
-              fontSize: "0.875rem",
-              borderRadius: "8px",
-            }}
-          >
-            <MessageCircle size={16} />
-            <span>Book Now</span>
-          </button>
-        </div>
 
         {/* Mobile Hamburger Button in Top Right */}
         <button
@@ -201,7 +193,6 @@ export default function Navbar() {
           className="mobile-hamburger-btn"
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           style={{
-            display: "none",
             alignItems: "center",
             justifyContent: "center",
             width: "42px",
@@ -210,7 +201,10 @@ export default function Navbar() {
             border: "1px solid #e2e8f0",
             backgroundColor: mobileMenuOpen ? "#f8fafc" : "#ffffff",
             color: "#0f172a",
-            boxShadow: "0 1px 2px rgba(0,0,0,0.05)",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
+            flexShrink: 0,
+            marginLeft: "auto",
+            cursor: "pointer",
           }}
         >
           {mobileMenuOpen ? <X size={22} color="#0f172a" /> : <Menu size={22} color="#0f172a" />}
@@ -261,8 +255,20 @@ export default function Navbar() {
                 borderBottom: "1px solid #f1f5f9",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <Compass size={20} color="#d97706" />
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <img
+                  src="/logo.jpg"
+                  alt="Dwarkesh Logo"
+                  style={{
+                    width: "34px",
+                    height: "34px",
+                    borderRadius: "50%",
+                    border: "1.5px solid #fde68a",
+                    objectFit: "cover",
+                    display: "block",
+                    flexShrink: 0,
+                  }}
+                />
                 <span style={{ fontSize: "1.1rem", fontWeight: 900, color: "#0f172a" }}>
                   {OWNER_INFO.businessName}
                 </span>
@@ -309,49 +315,13 @@ export default function Navbar() {
                 flexDirection: "column",
               }}
             >
-              {/* Top Nav Bar Info inside Mobile Drawer */}
+              {/* 1. All Navigation Pages First */}
               <div
                 style={{
-                  backgroundColor: "#f8fafc",
-                  border: "1px solid #e2e8f0",
-                  borderRadius: "12px",
-                  padding: "12px 14px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "6px",
                   marginBottom: "20px",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "6px",
-                }}
-              >
-                <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "0.8125rem", color: "#334155" }}>
-                  <MapPin size={15} color="#d97706" style={{ flexShrink: 0, marginTop: "2px" }} />
-                  <span>Stand: <strong>{OWNER_INFO.location}</strong></span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.875rem", color: "#334155" }}>
-                  <Phone size={14} color="#2563eb" style={{ flexShrink: 0 }} />
-                  <a
-                    href={`tel:+91${OWNER_INFO.phone.replace(/\s+/g, "")}`}
-                    style={{
-                      fontWeight: 700,
-                      color: "#2563eb",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    {OWNER_INFO.phoneFormatted}
-                  </a>
-                </div>
-                <div style={{ fontSize: "0.72rem", color: "#16a34a", fontWeight: 600, borderTop: "1px dashed #e2e8f0", paddingTop: "6px", marginTop: "2px", display: "flex", alignItems: "center", gap: "5px" }}>
-                  <Car size={13} color="#16a34a" />
-                  <span>Riksha &amp; 4-Wheeler as per number of persons</span>
-                </div>
-              </div>
-
-              {/* All 4 Navigation Pages One by One */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "6px",
-                  marginBottom: "24px",
                 }}
               >
                 <div
@@ -396,7 +366,48 @@ export default function Navbar() {
                 })}
               </div>
 
-              {/* Booking & Call Action Buttons inside Mobile Menu */}
+              {/* 2. Interactive Language Selection */}
+              <div style={{ marginBottom: "20px" }}>
+                <LanguageSelector variant="mobile" onSelect={() => setMobileMenuOpen(false)} />
+              </div>
+
+              {/* 3. Stand & Contact Information - Below Nav Pages and Above Buttons */}
+              <div
+                style={{
+                  backgroundColor: "#f8fafc",
+                  border: "1px solid #e2e8f0",
+                  borderRadius: "12px",
+                  padding: "14px 16px",
+                  marginBottom: "20px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "8px",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "flex-start", gap: "8px", fontSize: "0.8125rem", color: "#334155" }}>
+                  <MapPin size={15} color="#d97706" style={{ flexShrink: 0, marginTop: "2px" }} />
+                  <span>Stand: <strong>{OWNER_INFO.location}</strong></span>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.875rem", color: "#334155" }}>
+                  <Phone size={14} color="#2563eb" style={{ flexShrink: 0 }} />
+                  <a
+                    href={`tel:+91${OWNER_INFO.phone.replace(/\s+/g, "")}`}
+                    style={{
+                      fontWeight: 700,
+                      color: "#2563eb",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {OWNER_INFO.phoneFormatted}
+                  </a>
+                </div>
+                <div style={{ fontSize: "0.75rem", color: "#16a34a", fontWeight: 600, borderTop: "1px dashed #e2e8f0", paddingTop: "8px", marginTop: "2px", display: "flex", alignItems: "center", gap: "6px" }}>
+                  <Car size={14} color="#16a34a" />
+                  <span>Riksha &amp; 4-Wheeler as per number of persons</span>
+                </div>
+              </div>
+
+              {/* 3. Booking & Call Action Buttons at the Bottom */}
               <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: "10px", paddingTop: "12px" }}>
                 <button
                   onClick={() => {

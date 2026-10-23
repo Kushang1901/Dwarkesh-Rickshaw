@@ -30,26 +30,35 @@ export default function Footer() {
             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "14px" }}>
               <div
                 style={{
-                  width: "40px",
-                  height: "40px",
-                  borderRadius: "10px",
+                  width: "48px",
+                  height: "48px",
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                  border: "2px solid #fde68a",
+                  boxShadow: "0 2px 8px rgba(217, 119, 6, 0.15)",
+                  flexShrink: 0,
                   backgroundColor: "#fffbeb",
-                  border: "1px solid #fef3c7",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontSize: "1.3rem",
                 }}
               >
-                <Compass size={22} color="#d97706" />
+                <img
+                  src="/logo.jpg"
+                  alt="Dwarkesh Riksha & Tour Service Logo"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
               </div>
               <div>
                 <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "#0f172a" }}>
                   {OWNER_INFO.businessName}
                 </h3>
-                <p style={{ fontSize: "0.75rem", color: "#64748b" }}>
-                  Ashokbhai Chavda (Owner & Driver)
-                </p>
+
               </div>
             </div>
             <p style={{ fontSize: "0.875rem", color: "#475569", lineHeight: 1.6, marginBottom: "16px" }}>
@@ -130,10 +139,7 @@ export default function Footer() {
                   {OWNER_INFO.phoneFormatted} (Call / WhatsApp)
                 </a>
               </li>
-              <li style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "0.875rem", color: "#475569" }}>
-                <ShieldCheck size={18} color="#16a34a" style={{ flexShrink: 0 }} />
-                <span>Verified Local Driver • Direct Owner Rates</span>
-              </li>
+
             </ul>
           </div>
         </div>
@@ -153,7 +159,21 @@ export default function Footer() {
           }}
         >
           <p>
-            © 2026 {OWNER_INFO.businessName}. All rights reserved. Managed by Ashokbhai Chavda.
+            © 2026 {OWNER_INFO.businessName}. All rights reserved. Developed by{" "}
+            <a
+              href="https://kushangacharya.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#0f172a",
+                fontWeight: 700,
+                textDecoration: "underline",
+                textUnderlineOffset: "3px",
+              }}
+            >
+              Kushang Acharya
+            </a>
+            .
           </p>
 
         </div>
