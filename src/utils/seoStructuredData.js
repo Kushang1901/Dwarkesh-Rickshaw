@@ -1,6 +1,6 @@
 import { OWNER_INFO, DWARKA_DARSHAN, SOMNATH_DARSHAN, FAQS } from "../data/toursData.js";
 
-export const SITE_URL = "https://www.dwarkadarshantour.com";
+export const SITE_URL = "https://dwarkadarshantour.com";
 
 /**
  * Main LocalBusiness / TravelAgency Schema

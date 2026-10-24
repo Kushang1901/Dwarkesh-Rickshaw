@@ -15,8 +15,8 @@ export const OWNER_INFO = {
   reviewsCount: "250+",
   fleetNotice: "Auto Riksha & 4-Wheeler Car service provided as per number of persons",
   fleetDetails: "Auto Rickshaws, Sedans, SUVs & Tempo Travelers for groups",
-  website: "https://www.dwarkadarshantour.com",
-  domain: "www.dwarkadarshantour.com",
+  website: "https://dwarkadarshantour.com",
+  domain: "dwarkadarshantour.com",
   justdialUrl: "https://www.justdial.com/Dwarka-Gujarat/Dwarkesh-Riksha-Teen-Batti-Chowk/9999P2892-2892-251110161203-F8T6_BZDET#rateus",
   justdialProfileUrl: "https://www.justdial.com/Dwarka-Gujarat/Dwarkesh-Riksha-Teen-Batti-Chowk/9999P2892-2892-251110161203-F8T6_BZDET",
 };

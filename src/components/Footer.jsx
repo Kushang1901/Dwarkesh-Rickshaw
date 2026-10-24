@@ -67,7 +67,7 @@ export default function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", backgroundColor: "#fffbeb", padding: "6px 12px", borderRadius: "9999px", border: "1px solid #fde68a", fontSize: "0.8rem", color: "#b45309", fontWeight: 600 }}>
                 <span>🌐 Official Website:</span>
-                <span style={{ color: "#d97706" }}>www.dwarkadarshantour.com</span>
+                <span style={{ color: "#d97706" }}>dwarkadarshantour.com</span>
               </div>
               <a
                 href={OWNER_INFO.justdialUrl}

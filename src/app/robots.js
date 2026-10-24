@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://www.dwarkadarshantour.com";
+  const baseUrl = "https://dwarkadarshantour.com";
 
   return {
     rules: [

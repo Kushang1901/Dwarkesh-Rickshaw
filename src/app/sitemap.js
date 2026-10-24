@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseUrl = "https://www.dwarkadarshantour.com";
+  const baseUrl = "https://dwarkadarshantour.com";
   const currentDate = new Date().toISOString();
 
   return [
