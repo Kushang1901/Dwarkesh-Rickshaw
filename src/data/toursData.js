@@ -9,9 +9,12 @@ export const OWNER_INFO = {
   googleSearchQuery: "Dwarkesh Riksha",
   googleMapsUrl: "https://maps.google.com/?q=Teen+Batti+Chowk+Dwarka+Gujarat",
   experienceYears: "10+",
+  established: "2020",
+  operatingHours: "06:00 AM To 08:00 PM (Daily)",
   rating: "4.9",
   reviewsCount: "250+",
   fleetNotice: "Auto Riksha & 4-Wheeler Car service provided as per number of persons",
+  fleetDetails: "Auto Rickshaws, Sedans, SUVs & Tempo Travelers for groups",
   website: "https://www.dwarkadarshantour.com",
   domain: "www.dwarkadarshantour.com",
   justdialUrl: "https://www.justdial.com/Dwarka-Gujarat/Dwarkesh-Riksha-Teen-Batti-Chowk/9999P2892-2892-251110161203-F8T6_BZDET#rateus",
@@ -425,5 +428,17 @@ export const FAQS = [
   {
     q: "Are temple entry and boat ferry fees included?",
     a: "No, the fare covers complete vehicle hire and dedicated driver guidance. Small local entry fees (like Shivrajpur Beach entry or Bet Dwarka public ferry ticket) are paid directly by visitors at the respective counters.",
+  },
+  {
+    q: "Can we travel with luggage and suitcases in the vehicle?",
+    a: "Yes! Both our Auto Rickshaws and 4-Wheeler Cars / SUVs have dedicated space for travel bags and luggage. If you are arriving directly from the railway station with heavy baggage, please let us know during booking so we allocate the most comfortable vehicle.",
+  },
+  {
+    q: "What are your daily operating hours?",
+    a: "We operate daily from 06:00 AM To 08:00 PM across all 7 days of the week. Early morning pickup for Mangla Aarti or early train arrivals at Dwarka Railway Station can easily be coordinated via WhatsApp.",
+  },
+  {
+    q: "Do you arrange larger vehicles like SUVs or Tempo Travelers for big families?",
+    a: "Yes! In addition to Auto Rickshaws (1-4 persons) and 4-Wheeler Sedans/SUVs (4-7 persons), we also arrange spacious Tempo Travelers and mini-coaches for large pilgrim groups, family gatherings, and community yatras.",
   },
 ];

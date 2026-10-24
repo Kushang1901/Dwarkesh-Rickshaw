@@ -1,12 +1,27 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Star, ExternalLink, MessageSquarePlus, ShieldCheck, CheckCircle2 } from "lucide-react";
 import { JUSTDIAL_STATS, JUSTDIAL_REVIEWS } from "@/data/toursData";
 
 export default function ReviewsMarquee() {
   // Duplicate reviews array to create an infinite, seamless continuous marquee loop
   const duplicatedReviews = [...JUSTDIAL_REVIEWS, ...JUSTDIAL_REVIEWS];
+
+  // Ensure direct link with hash scrolls perfectly into view when opened
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const hash = window.location.hash.toLowerCase();
+      if (hash === "#testimonials" || hash === "#reviews") {
+        const el = document.getElementById("testimonials") || document.getElementById("reviews");
+        if (el) {
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 250);
+        }
+      }
+    }
+  }, []);
 
   return (
     <section
@@ -18,8 +33,12 @@ export default function ReviewsMarquee() {
         borderBottom: "1px solid #e2e8f0",
         position: "relative",
         overflow: "hidden",
+        scrollMarginTop: "90px",
       }}
     >
+      {/* Anchor for #testimonials */}
+      <div id="testimonials" style={{ position: "absolute", top: "-90px" }} />
+
       <div className="container">
         {/* Header */}
         <div style={{ textAlign: "center", maxWidth: "760px", margin: "0 auto 36px" }}>
