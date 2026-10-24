@@ -1,10 +1,16 @@
 import { getBreadcrumbSchema, SITE_URL } from "@/utils/seoStructuredData";
 
 export const metadata = {
-  title: "Contact & WhatsApp Booking | Teen Batti Chowk, Dwarka",
+  title: "Contact Ashokbhai Chavda | Dwarka Riksha & Dwarkesh Tour Service",
   description:
-    "Contact Dwarkesh Tour and Ashokbhai Chavda directly. Stand location: Teen Batti Chowk, Dwarka, Gujarat. Call or WhatsApp +91 99981 51725 for instant tour booking & inquiries.",
+    "Contact Dwarkesh Tour & Dwarka Riksha Service directly with Ashokbhai Chavda. Stand location: Teen Batti Chowk, Dwarka, Gujarat. Call or WhatsApp +91 99981 51725 for instant tour booking.",
   keywords: [
+    "Dwarka Riksha",
+    "Dwarkesh Riksha",
+    "Dwarka Tour Service",
+    "Dwarkesh Tour Service",
+    "Ashokbhai Chavda",
+    "Ashokbhai Chavda Dwarka",
     "Contact Dwarkesh Tour",
     "Dwarka rickshaw stand contact number",
     "Ashokbhai Chavda Dwarka phone number",

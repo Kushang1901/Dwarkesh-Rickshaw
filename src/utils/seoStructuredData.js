@@ -11,14 +11,21 @@ export function getBusinessSchema() {
     "@context": "https://schema.org",
     "@type": ["TravelAgency", "LocalBusiness", "TouristInformationCenter"],
     "@id": `${SITE_URL}/#business`,
-    name: "Dwarkesh Tour",
+    name: "Dwarkesh Tour & Dwarka Riksha Service",
     alternateName: [
+      "Dwarka Riksha",
       "Dwarkesh Riksha",
+      "Dwarka Tour Service",
       "Dwarkesh Tour Service",
+      "Ashokbhai Chavda Riksha",
+      "Ashokbhai Chavda Dwarka",
+      "Dwarkesh Tour",
       "Dwarka Darshan Auto Riksha & Car Service",
       "Dwarkesh Darshan Tour",
       "Dwarka Tour Travels",
     ],
+    keywords:
+      "Dwarka Riksha, Dwarkesh Riksha, Dwarka Tour Service, Dwarkesh Tour Service, Ashokbhai Chavda, Ashokbhai Chavda Dwarka, Dwarka Darshan Auto Riksha",
     url: SITE_URL,
     logo: `${SITE_URL}/logo.jpg`,
     image: [
@@ -27,7 +34,7 @@ export function getBusinessSchema() {
       `${SITE_URL}/hero-bg-2.jpg`,
     ],
     description:
-      "Official website of Dwarkesh Tour & Rickshaw Service based at Teen Batti Chowk, Dwarka, Gujarat. Providing complete 8 sacred places Dwarka Darshan and coastal Somnath Darshan tours with Auto Rickshaw and 4-Wheeler Car options.",
+      "Official website of Dwarkesh Tour & Dwarka Riksha Service by Ashokbhai Chavda at Teen Batti Chowk, Dwarka, Gujarat. Providing complete 8 sacred places Dwarka Darshan and coastal Somnath Darshan tours with Auto Rickshaw and 4-Wheeler Car options.",
     telephone: "+91-99981-51725",
     priceRange: "₹₹",
     currenciesAccepted: "INR",

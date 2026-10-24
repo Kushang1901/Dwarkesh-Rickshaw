@@ -9,6 +9,12 @@ export const metadata = {
   description:
     "Complete 8 places Dwarka Darshan tour package: Nageshwar Jyotirling, Bet Dwarka, Gopi Talab, Rukmini Temple, Shivrajpur Blue Flag Beach, and Bhadkeshwar Mahadev. Daily morning & afternoon shifts.",
   keywords: [
+    "Dwarka Riksha",
+    "Dwarkesh Riksha",
+    "Dwarka Tour Service",
+    "Dwarkesh Tour Service",
+    "Ashokbhai Chavda",
+    "Ashokbhai Chavda Dwarka",
     "Dwarka Darshan",
     "Dwarka 8 places tour",
     "Nageshwar Jyotirling Riksha",

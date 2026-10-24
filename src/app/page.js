@@ -89,13 +89,13 @@ export default function HomePage() {
               }}
             >
               <Car size={15} color="#b45309" />
-              <span>Auto Riksha &amp; 4-Wheeler Car Service (As per Persons) • {OWNER_INFO.location}</span>
+              <span>Dwarkesh Tour &amp; Riksha Service • Ashokbhai Chavda • {OWNER_INFO.location}</span>
             </div>
 
             {/* Headline */}
             <h1
               style={{
-                fontSize: "clamp(2.4rem, 4.5vw, 3.8rem)",
+                fontSize: "clamp(2.3rem, 4.4vw, 3.6rem)",
                 fontWeight: 900,
                 color: "#0f172a",
                 lineHeight: 1.15,
@@ -103,19 +103,19 @@ export default function HomePage() {
                 marginBottom: "16px",
               }}
             >
-              Devbhumi Dwarka &amp; Somnath Darshan in Comfort
+              Dwarkesh Riksha &amp; Tour Service | Dwarka Darshan
             </h1>
 
             {/* Subheading with Hindi emphasis */}
             <div
               style={{
-                fontSize: "1.3rem",
+                fontSize: "1.25rem",
                 fontWeight: 700,
                 color: "#d97706",
                 marginBottom: "20px",
               }}
             >
-              द्वारका दर्शन (8 पवित्र स्थल) एवं सोमनाथ दर्शन टूर सेवा
+              द्वारका दर्शन (8 पवित्र स्थल) एवं सोमनाथ दर्शन टूर सेवा • द्वारकेश रिक्शा
             </div>
 
             <p
@@ -127,7 +127,7 @@ export default function HomePage() {
                 margin: "0 auto 32px",
               }}
             >
-              Welcome to Dwarka! Travel hassle-free with positive vibes and energy. Enjoy clean, punctual, and well-guided pilgrimage tours covering sacred Jyotirlingas, coastal temples, and scenic beaches. For visiting places, <strong>4-wheeler service is provided along with rickshaw as per the respected number of persons</strong> in your family.
+              Welcome to Devbhumi Dwarka! <strong>Dwarkesh Tour &amp; Riksha Service</strong>, operated directly by <strong>Ashokbhai Chavda</strong> at Teen Batti Chowk, is your premier <strong>Dwarka Riksha</strong> and local <strong>Dwarka Tour Service</strong>. Enjoy clean, punctual, and well-guided pilgrimage tours covering sacred Jyotirlingas, coastal temples, and scenic beaches. For visiting places, <strong>4-wheeler car service is provided along with rickshaw as per the respected number of persons</strong> in your family.
             </p>
 
             {/* Action Buttons */}
@@ -591,10 +591,10 @@ export default function HomePage() {
               <ShieldCheck size={13} /> DWARKESH RIKSHA COMMITMENT
             </span>
             <h2 className="section-title">
-              Why Devotees Prefer Our Riksha Service
+              Why Pilgrims Choose Dwarkesh Tour &amp; Dwarka Riksha Service
             </h2>
             <p className="section-subtitle" style={{ margin: "0 auto" }}>
-              Experience the genuine warmth, reliability, and local knowledge of a true Dwarka native.
+              Experience the genuine hospitality, punctuality, and local temple knowledge of Ashokbhai Chavda.
             </p>
           </div>
 

@@ -9,6 +9,11 @@ export const metadata = {
   description:
     "Coastal highway pilgrimage from Dwarka to Somnath Jyotirling. Visit Harsiddhi Temple, Mul Dwarka, Sudama Temple, Gandhi Birthplace (Kirti Mandir), and Bhalka Tirth. Comfortable 4-wheeler cars and rickshaws.",
   keywords: [
+    "Dwarka Riksha",
+    "Dwarkesh Riksha",
+    "Dwarka Tour Service",
+    "Dwarkesh Tour Service",
+    "Ashokbhai Chavda",
     "Dwarka to Somnath tour",
     "Somnath Darshan cab",
     "Somnath tour package from Dwarka",
