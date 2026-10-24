@@ -14,6 +14,8 @@ export const OWNER_INFO = {
   fleetNotice: "Auto Riksha & 4-Wheeler Car service provided as per number of persons",
   website: "https://www.dwarkadarshantour.com",
   domain: "www.dwarkadarshantour.com",
+  justdialUrl: "https://www.justdial.com/Dwarka-Gujarat/Dwarkesh-Riksha-Teen-Batti-Chowk/9999P2892-2892-251110161203-F8T6_BZDET#rateus",
+  justdialProfileUrl: "https://www.justdial.com/Dwarka-Gujarat/Dwarkesh-Riksha-Teen-Batti-Chowk/9999P2892-2892-251110161203-F8T6_BZDET",
 };
 
 export const DWARKA_DARSHAN = {
@@ -313,6 +315,89 @@ export const TESTIMONIALS = [
     text: "Honest person and very reasonable fare. No haggling or surprise charges like other tour agents. Booking through WhatsApp was super smooth.",
     rating: 5,
     date: "March 2026",
+  },
+];
+
+export const JUSTDIAL_STATS = {
+  rating: "4.3",
+  ratingOutOf: "5.0",
+  totalReviews: "17",
+  sourceName: "Justdial",
+  rateUsUrl: "https://www.justdial.com/Dwarka-Gujarat/Dwarkesh-Riksha-Teen-Batti-Chowk/9999P2892-2892-251110161203-F8T6_BZDET#rateus",
+  profileUrl: "https://www.justdial.com/Dwarka-Gujarat/Dwarkesh-Riksha-Teen-Batti-Chowk/9999P2892-2892-251110161203-F8T6_BZDET",
+};
+
+export const JUSTDIAL_REVIEWS = [
+  {
+    id: "jd-1",
+    name: "Yogesh Chavda",
+    date: "24 Nov 2025",
+    rating: 5,
+    highlight: "Impeccably Clean & Fast Booking",
+    text: "I recently used Dwarkesh Riksha for my transportation needs, and I couldn't be more pleased! Their quick service ensured I reached my destination on time. The vehicles were not only safe but also impeccably clean, making for a comfortable ride. The booking process was incredibly easy. Highly recommended!",
+    source: "Justdial.com",
+    verified: true,
+  },
+  {
+    id: "jd-2",
+    name: "Rohit Bhai",
+    date: "27 Nov 2025",
+    rating: 5,
+    highlight: "Arrived On Time & Friendly Driver",
+    text: "I had a great experience with Dwarkesh Riksha, a transportation booking service. The service was very quick and efficient. I booked my ride easily, and the driver arrived on time. The ride was comfortable, and the driver was friendly. Overall, Dwarkesh Riksha provided excellent service. Highly recommend it!",
+    source: "Justdial.com",
+    verified: true,
+  },
+  {
+    id: "jd-3",
+    name: "Nayna Ben Tavdi",
+    date: "13 Nov 2025",
+    rating: 5,
+    highlight: "Spotless Riksha & Felt Completely Safe",
+    text: "My experience with Dwarkesh Riksha was exceptional! The booking process was incredibly easy and fast, allowing me to secure my ride in no time. The vehicle arrived promptly, and I felt safe throughout my journey. The riksha was spotless, showcasing their commitment to cleanliness.",
+    source: "Justdial.com",
+    verified: true,
+  },
+  {
+    id: "jd-4",
+    name: "Jitu Bhai",
+    date: "23 Nov 2025",
+    rating: 5,
+    highlight: "Peace of Mind & Friendly Staff",
+    text: "I recently used Dwarkesh Riksha for my transportation needs, and I was really impressed! One of the best things was their honest and reliable service. It gave me peace of mind knowing that I was protected during my journey. The staff were friendly and the ride was comfortable.",
+    source: "Justdial.com",
+    verified: true,
+  },
+  {
+    id: "jd-5",
+    name: "Sudip Banerjee",
+    date: "26 Nov 2025",
+    rating: 5,
+    highlight: "Decent Behaviour & Honest Guidance",
+    text: "Very good and decent behaviour. Ashokbhai took care of my family and guided us through all places smoothly without any hassle.",
+    source: "Justdial.com",
+    verified: true,
+  },
+  {
+    id: "jd-6",
+    name: "Tavdi Alpesh",
+    date: "22 Nov 2025",
+    rating: 5,
+    highlight: "Good Person & Punctual Service",
+    text: "Ashok bhai is good person. Very punctual for the morning shift and helped elderly family members with great respect.",
+    source: "Justdial.com",
+    verified: true,
+  },
+  {
+    id: "jd-7",
+    name: "Manek",
+    date: "25 Jun 2026",
+    rating: 3,
+    highlight: "Seasonal Feedback & Experience",
+    tags: ["Unsanitised", "Unsafe vehicle", "Expensive", "Less insurance cover"],
+    text: "I had a critical experience with Dwarkesh Riksha regarding vehicle sanitisation and pricing during rush period. Direct feedback was submitted for safety standards and tour maintenance.",
+    source: "Justdial.com",
+    verified: true,
   },
 ];
 

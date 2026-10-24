@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { OWNER_INFO, DWARKA_DARSHAN, SOMNATH_DARSHAN, WHY_CHOOSE_US, TESTIMONIALS, FAQS } from "@/data/toursData";
 import { useBooking } from "@/context/BookingContext";
+import ReviewsMarquee from "@/components/ReviewsMarquee";
 import {
   Phone,
   MessageCircle,
@@ -637,7 +638,8 @@ export default function HomePage() {
         </div>
       </section>
 
-
+      {/* SECTION: CONTINUOUS CUSTOMER REVIEWS (JUSTDIAL) */}
+      <ReviewsMarquee />
 
       {/* SECTION: FAQS */}
       <section style={{ padding: "72px 0", backgroundColor: "#ffffff", borderBottom: "1px solid #e2e8f0" }}>
