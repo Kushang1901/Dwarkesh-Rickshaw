@@ -380,11 +380,9 @@ button {
 @keyframes loaderPulse {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 4px 16px rgba(217, 119, 6, 0.2);
   }
   50% {
     transform: scale(1.04);
-    box-shadow: 0 6px 22px rgba(217, 119, 6, 0.35);
   }
 }
 

@@ -91,7 +91,7 @@ export default function DwarkaDarshanPage() {
               }}
             >
               Dwarka Darshan Tour Package
-              <span style={{ display: "block", color: "#d97706", fontSize: "1.7rem", fontWeight: 700, marginTop: "6px" }}>
+              <span style={{ display: "block", color: "#b45309", fontSize: "1.7rem", fontWeight: 700, marginTop: "6px" }}>
                 द्वारका दर्शन (8 प्रमुख पवित्र एवं दर्शनीय स्थल)
               </span>
             </h1>
@@ -144,7 +144,7 @@ export default function DwarkaDarshanPage() {
                   <div style={{ fontSize: "1rem", fontWeight: 800, color: "#0f172a" }}>
                     07:30 AM To 01:00 PM
                   </div>
-                  <div style={{ fontSize: "0.75rem", color: "#16a34a", fontWeight: 600 }}>
+                  <div style={{ fontSize: "0.75rem", color: "#15803d", fontWeight: 600 }}>
                     Best for early darshan &amp; calm waters
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export default function DwarkaDarshanPage() {
                     flexShrink: 0,
                   }}
                 >
-                  <Sunset size={22} color="#d97706" />
+                  <Sunset size={22} color="#b45309" />
                 </div>
                 <div>
                   <div style={{ fontSize: "0.75rem", fontWeight: 700, color: "#64748b", textTransform: "uppercase" }}>
@@ -183,7 +183,7 @@ export default function DwarkaDarshanPage() {
                   <div style={{ fontSize: "1rem", fontWeight: 800, color: "#0f172a" }}>
                     01:30 PM To 07:00 PM
                   </div>
-                  <div style={{ fontSize: "0.75rem", color: "#d97706", fontWeight: 600 }}>
+                  <div style={{ fontSize: "0.75rem", color: "#b45309", fontWeight: 600 }}>
                     Includes sunset at Bhadkeshwar
                   </div>
                 </div>

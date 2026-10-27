@@ -157,6 +157,13 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify(dwarkaTripSchema),
           }}
         />
+        <link
+          rel="preload"
+          as="image"
+          href="/hero-bg-sketch.webp"
+          type="image/webp"
+          fetchPriority="high"
+        />
       </head>
       <body>
         <LanguageProvider>

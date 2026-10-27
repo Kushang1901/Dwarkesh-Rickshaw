@@ -69,8 +69,8 @@ export default function Navbar() {
             <span>Location: <strong>{OWNER_INFO.location}</strong></span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
-            <span style={{ color: "#16a34a", fontWeight: 600, display: "flex", alignItems: "center", gap: "5px" }}>
-              <Car size={13} color="#16a34a" />
+            <span style={{ color: "#15803d", fontWeight: 600, display: "flex", alignItems: "center", gap: "5px" }}>
+              <Car size={13} color="#15803d" />
               <span>Riksha &amp; 4-Wheeler Car (as per persons)</span>
             </span>
             <span style={{ color: "#cbd5e1" }}>•</span>
@@ -123,8 +123,10 @@ export default function Navbar() {
             }}
           >
             <img
-              src="/logo.jpg"
+              src="/logo.webp"
               alt="Dwarkesh Riksha & Tour Service Logo"
+              width={40}
+              height={40}
               style={{
                 width: "100%",
                 height: "100%",
@@ -176,7 +178,7 @@ export default function Navbar() {
                 style={{
                   fontSize: "0.95rem",
                   fontWeight: isActive ? 700 : 600,
-                  color: isActive ? "#d97706" : "#334155",
+                  color: isActive ? "#b45309" : "#334155",
                   transition: "color 0.15s",
                 }}
               >
@@ -257,8 +259,10 @@ export default function Navbar() {
             >
               <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                 <img
-                  src="/logo.jpg"
+                  src="/logo.webp"
                   alt="Dwarkesh Logo"
+                  width={34}
+                  height={34}
                   style={{
                     width: "34px",
                     height: "34px",
@@ -328,7 +332,7 @@ export default function Navbar() {
                   style={{
                     fontSize: "0.6875rem",
                     fontWeight: 800,
-                    color: "#94a3b8",
+                    color: "#64748b",
                     textTransform: "uppercase",
                     letterSpacing: "0.06em",
                     marginBottom: "4px",
@@ -401,8 +405,8 @@ export default function Navbar() {
                     {OWNER_INFO.phoneFormatted}
                   </a>
                 </div>
-                <div style={{ fontSize: "0.75rem", color: "#16a34a", fontWeight: 600, borderTop: "1px dashed #e2e8f0", paddingTop: "8px", marginTop: "2px", display: "flex", alignItems: "center", gap: "6px" }}>
-                  <Car size={14} color="#16a34a" />
+                <div style={{ fontSize: "0.75rem", color: "#15803d", fontWeight: 600, borderTop: "1px dashed #e2e8f0", paddingTop: "8px", marginTop: "2px", display: "flex", alignItems: "center", gap: "6px" }}>
+                  <Car size={14} color="#15803d" />
                   <span>Riksha &amp; 4-Wheeler as per number of persons</span>
                 </div>
               </div>

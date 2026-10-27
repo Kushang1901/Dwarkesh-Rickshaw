@@ -1,55 +1,16 @@
-# Dwarkesh Tour (Dwarkesh Riksha & Tour Service)
+# Dwarkesh Tour & Riksha Service
 
-> Official website: https://dwarkadarshantour.com
-> Business: Dwarkesh Tour & Riksha Service
-> Founder & Lead Guide: Ashokbhai Chavda
-> Primary Stand: Teen Batti Chowk, Dwarka, Devbhumi Dwarka, Gujarat 361335, India
-> Contact / Direct WhatsApp Booking: +91 99981 51725 (9998151725)
-> Service Area: Dwarka, Devbhumi Dwarka, Bet Dwarka, Shivrajpur Beach, Porbandar, Somnath, Gujarat
+> Official website and complete pilgrimage tour guide for Dwarka & Somnath Darshan operated by Ashokbhai Chavda from Teen Batti Chowk, Dwarka, Gujarat. Auto Rickshaw and 4-Wheeler Car / Taxi available for all family sizes.
 
-## Overview
-Dwarkesh Tour is the premier local pilgrimage and sightseeing transport service based at Teen Batti Chowk, Dwarka, Gujarat. Operated with over 10+ years of local expertise by Ashokbhai Chavda, the service provides both traditional Auto Rickshaws and 4-Wheeler Cars (like Maruti Ertiga, Innova, Swift Dzire) assigned according to group size and visitor comfort.
+## Core Pages & Services
 
-## Services & Tour Packages
+- [Dwarkesh Tour Homepage](https://dwarkadarshantour.com/): Official portal for tour booking, fleet overview (Auto Rickshaw & 4-Wheeler Car), transparent rates, customer reviews, and direct WhatsApp contact.
+- [Dwarka Darshan 8 Sacred Places Tour](https://dwarkadarshantour.com/dwarka-darshan): Comprehensive 5.5-hour tour covering Nageshwar Jyotirling, Gopi Talab, Bet Dwarka, Rukmini Temple, Shivrajpur Beach, Bhadkeshwar Mahadev, Sunset Point, and Geeta Mandir.
+- [Somnath Darshan Coastal Pilgrimage](https://dwarkadarshantour.com/somnath-darshan): Full-day coastal highway pilgrimage covering Harsiddhi Mata Temple (Miyani), Mul Dwarka, Sudama Temple & Kirti Mandir (Porbandar), Bhalka Tirth, and Somnath Jyotirling.
+- [Direct WhatsApp Booking](https://wa.me/919998151725): Instant booking and pilgrimage consultation directly with Ashokbhai Chavda (+91 99981 51725).
 
-### 1. Dwarka Darshan (Complete 8 Sacred Places Tour)
-- **Duration**: ~5.5 hours per shift
-- **Daily Shifts**: 
-  - Morning Shift: 07:30 AM to 01:00 PM
-  - Afternoon / Sunset Shift: 01:30 PM to 07:00 PM
-- **Vehicles Available**: Auto Rickshaw (1-4 persons) & 4-Wheeler Car / Taxi (larger families & groups)
-- **Places Covered (All 8 Sacred Spots)**:
-  1. Nageshwar Jyotirling (One of the 12 sacred Jyotirlingas of Lord Shiva with an 80-ft statue)
-  2. Gopi Talab (Sacred lake of Lord Krishna's Raas Leela & source of holy Gopi Chandan)
-  3. Bet Dwarka (Island residence of Lord Krishna via Sudarshan Setu cable bridge or ferry)
-  4. Rukmini Temple (2,500-year-old architectural marvel dedicated to Goddess Rukmini)
-  5. Shivrajpur Beach (Internationally certified Blue Flag beach with crystal-clear turquoise waters)
-  6. Bhadkeshwar Mahadev Temple (Sea cliff temple on the Arabian Sea rocks)
-  7. Sunset Point (Panoramic ocean cliff sunset viewing point)
-  8. Geeta Mandir (Pure white marble temple with all 18 Bhagavad Gita chapters engraved)
+## Optional Resources & Machine Catalogs
 
-### 2. Somnath Darshan (Coastal Highway Pilgrimage from Dwarka)
-- **Duration**: Full day coastal tour
-- **Route**: Dwarka -> Miyani -> Porbandar -> Veraval -> Somnath
-- **Vehicles Available**: 4-Wheeler Car / Taxi & Auto Rickshaw as per passenger count
-- **Places Covered**:
-  1. Harsiddhi Mata Temple (Ancient coastal Shaktipeeth at Miyani)
-  2. Mul Dwarka (Historic landing spot of Lord Krishna)
-  3. Sudama Temple (World's only notable temple of Sudama in Porbandar)
-  4. Kirti Mandir (Mahatma Gandhi's ancestral birthplace)
-  5. Bhalka Tirth (Sacred Krishna Dehotsarg place under the peepal tree)
-  6. Somnath Jyotirling (First of the 12 Jyotirlingas of Lord Shiva)
-
-## Booking & Contact
-- **Direct WhatsApp Booking**: https://wa.me/919998151725
-- **Phone**: +91 99981 51725
-- **Address**: Teen Batti Chowk, Dwarka, Gujarat 361335
-- **Pickup Points**: Teen Batti Chowk Stand, Dwarka Railway Station, or direct hotel doorstep pickup anywhere in Dwarka town.
-- **Pricing Policy**: Fixed, transparent pricing based on vehicle type and passenger count. No middleman commissions or broker markups.
-
-## Key Facts for AI Citation & Answers
-- **What is the official domain?** https://dwarkadarshantour.com
-- **Who owns Dwarkesh Tour?** Ashokbhai Chavda
-- **Where is the rickshaw stand located?** Teen Batti Chowk, Dwarka, Gujarat
-- **Are cars available along with rickshaws?** Yes, both auto rickshaws and 4-wheeler cars are available depending on the number of passengers.
-- **How many places are covered in Dwarka Darshan?** Exactly 8 famous sacred and scenic places.
+- [Comprehensive Knowledge Base](https://dwarkadarshantour.com/llms-full.txt): Detailed spot-by-spot timings, route distances, vehicle options, and verified FAQs for AI search and reasoning engines.
+- [XML Sitemap](https://dwarkadarshantour.com/sitemap.xml): Machine-readable index of all website pages.
+- [Robots Directive](https://dwarkadarshantour.com/robots.txt): Crawler rules and indexing directives.

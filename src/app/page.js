@@ -50,7 +50,7 @@ export default function HomePage() {
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage: "url('/hero-bg-sketch.jpg')",
+            backgroundImage: "url('/hero-bg-sketch.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center 12%",
             backgroundRepeat: "no-repeat",
@@ -111,7 +111,7 @@ export default function HomePage() {
               style={{
                 fontSize: "1.25rem",
                 fontWeight: 700,
-                color: "#d97706",
+                color: "#b45309",
                 marginBottom: "20px",
               }}
             >
@@ -215,13 +215,13 @@ export default function HomePage() {
               </div>
 
               <div style={{ padding: "32px 28px 20px", borderBottom: "1px solid #f1f5f9" }}>
-                <span style={{ fontSize: "0.8125rem", fontWeight: 700, color: "#d97706", textTransform: "uppercase" }}>
+                <span style={{ fontSize: "0.8125rem", fontWeight: 700, color: "#b45309", textTransform: "uppercase" }}>
                   5.5 Hours Local Sightseeing
                 </span>
                 <h3 style={{ fontSize: "1.75rem", fontWeight: 900, color: "#0f172a", marginTop: "4px" }}>
                   {DWARKA_DARSHAN.title}
                 </h3>
-                <div style={{ fontSize: "1.2rem", fontWeight: 700, color: "#d97706", marginBottom: "12px" }}>
+                <div style={{ fontSize: "1.2rem", fontWeight: 700, color: "#b45309", marginBottom: "12px" }}>
                   {DWARKA_DARSHAN.titleHindi}
                 </div>
                 <p style={{ fontSize: "0.9rem", color: "#475569", lineHeight: 1.55 }}>
@@ -229,8 +229,8 @@ export default function HomePage() {
                 </p>
 
                 {/* Fleet provision notice */}
-                <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", color: "#16a34a", fontWeight: 700, backgroundColor: "#f0fdf4", border: "1px solid #bbf7d0", padding: "5px 10px", borderRadius: "6px", marginTop: "12px" }}>
-                  <Car size={14} color="#16a34a" />
+                <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", color: "#15803d", fontWeight: 700, backgroundColor: "#f0fdf4", border: "1px solid #bbf7d0", padding: "5px 10px", borderRadius: "6px", marginTop: "12px" }}>
+                  <Car size={14} color="#15803d" />
                   <span>Auto Riksha &amp; 4-Wheeler Car provided as per number of persons</span>
                 </div>
 
@@ -324,13 +324,13 @@ export default function HomePage() {
               </div>
 
               <div style={{ padding: "32px 28px 20px", borderBottom: "1px solid #f1f5f9" }}>
-                <span style={{ fontSize: "0.8125rem", fontWeight: 700, color: "#0284c7", textTransform: "uppercase" }}>
+                <span style={{ fontSize: "0.8125rem", fontWeight: 700, color: "#0369a1", textTransform: "uppercase" }}>
                   Saurashtra Highway Darshan
                 </span>
                 <h3 style={{ fontSize: "1.75rem", fontWeight: 900, color: "#0f172a", marginTop: "4px" }}>
                   {SOMNATH_DARSHAN.title}
                 </h3>
-                <div style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0284c7", marginBottom: "12px" }}>
+                <div style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0369a1", marginBottom: "12px" }}>
                   {SOMNATH_DARSHAN.titleHindi}
                 </div>
                 <p style={{ fontSize: "0.9rem", color: "#475569", lineHeight: 1.55 }}>
@@ -338,8 +338,8 @@ export default function HomePage() {
                 </p>
 
                 {/* Fleet provision notice */}
-                <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", color: "#0284c7", fontWeight: 700, backgroundColor: "#f0f9ff", border: "1px solid #bae6fd", padding: "5px 10px", borderRadius: "6px", marginTop: "12px" }}>
-                  <Car size={14} color="#0284c7" />
+                <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", color: "#0369a1", fontWeight: 700, backgroundColor: "#f0f9ff", border: "1px solid #bae6fd", padding: "5px 10px", borderRadius: "6px", marginTop: "12px" }}>
+                  <Car size={14} color="#0369a1" />
                   <span>4-Wheeler Car &amp; Auto Riksha provided as per number of persons</span>
                 </div>
 
@@ -496,7 +496,7 @@ export default function HomePage() {
                   height: "56px",
                   borderRadius: "50%",
                   backgroundColor: "#fffbeb",
-                  color: "#d97706",
+                  color: "#b45309",
                   fontWeight: 900,
                   fontSize: "1.25rem",
                   display: "flex",
@@ -527,7 +527,7 @@ export default function HomePage() {
                   height: "56px",
                   borderRadius: "50%",
                   backgroundColor: "#f0fdf4",
-                  color: "#16a34a",
+                  color: "#15803d",
                   fontWeight: 900,
                   fontSize: "1.25rem",
                   display: "flex",

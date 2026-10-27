@@ -62,7 +62,7 @@ export default function QuickBookCard({ defaultPackage = "Dwarka Darshan", defau
           style={{
             fontSize: "0.75rem",
             fontWeight: 700,
-            color: "#d97706",
+            color: "#b45309",
             backgroundColor: "#fffbeb",
             padding: "4px 10px",
             borderRadius: "9999px",
@@ -78,7 +78,7 @@ export default function QuickBookCard({ defaultPackage = "Dwarka Darshan", defau
         <span
           style={{
             fontSize: "0.75rem",
-            color: "#16a34a",
+            color: "#15803d",
             fontWeight: 600,
             display: "inline-flex",
             alignItems: "center",

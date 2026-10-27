@@ -44,8 +44,10 @@ export default function Footer() {
                 }}
               >
                 <img
-                  src="/logo.jpg"
+                  src="/logo.webp"
                   alt="Dwarkesh Riksha & Tour Service Logo"
+                  width={44}
+                  height={44}
                   style={{
                     width: "100%",
                     height: "100%",
@@ -67,7 +69,7 @@ export default function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <div style={{ display: "inline-flex", alignItems: "center", gap: "6px", backgroundColor: "#fffbeb", padding: "6px 12px", borderRadius: "9999px", border: "1px solid #fde68a", fontSize: "0.8rem", color: "#b45309", fontWeight: 600 }}>
                 <span>🌐 Official Website:</span>
-                <span style={{ color: "#d97706" }}>dwarkadarshantour.com</span>
+                <span style={{ color: "#b45309" }}>dwarkadarshantour.com</span>
               </div>
               <a
                 href={OWNER_INFO.justdialUrl}
@@ -110,7 +112,7 @@ export default function Footer() {
               <div style={{ backgroundColor: "#f8fafc", padding: "12px", borderRadius: "10px", border: "1px solid #f1f5f9" }}>
                 <Link
                   href="/dwarka-darshan"
-                  style={{ fontWeight: 700, color: "#d97706", fontSize: "0.9rem", display: "block", marginBottom: "4px" }}
+                  style={{ fontWeight: 700, color: "#b45309", fontSize: "0.9rem", display: "block", marginBottom: "4px" }}
                 >
                   {DWARKA_DARSHAN.title} ({DWARKA_DARSHAN.titleHindi})
                 </Link>
@@ -123,7 +125,7 @@ export default function Footer() {
               <div style={{ backgroundColor: "#f8fafc", padding: "12px", borderRadius: "10px", border: "1px solid #f1f5f9" }}>
                 <Link
                   href="/somnath-darshan"
-                  style={{ fontWeight: 700, color: "#0284c7", fontSize: "0.9rem", display: "block", marginBottom: "4px" }}
+                  style={{ fontWeight: 700, color: "#0369a1", fontSize: "0.9rem", display: "block", marginBottom: "4px" }}
                 >
                   {SOMNATH_DARSHAN.title} ({SOMNATH_DARSHAN.titleHindi})
                 </Link>
@@ -151,11 +153,11 @@ export default function Footer() {
             </h4>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "12px" }}>
               <li style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.875rem", color: "#475569" }}>
-                <MapPin size={18} color="#d97706" style={{ flexShrink: 0, marginTop: "2px" }} />
+                <MapPin size={18} color="#b45309" style={{ flexShrink: 0, marginTop: "2px" }} />
                 <span>
                   <strong>Teen Batti Chowk</strong>, Dwarka, Gujarat - 361335
                   <br />
-                  <span style={{ fontSize: "0.78rem", color: "#94a3b8" }}>(Near Dwarkadhish Temple Area)</span>
+                  <span style={{ fontSize: "0.78rem", color: "#64748b" }}>(Near Dwarkadhish Temple Area)</span>
                 </span>
               </li>
               <li style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "0.875rem", color: "#475569" }}>

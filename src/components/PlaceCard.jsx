@@ -47,7 +47,7 @@ export default function PlaceCard({ place, tourTitle = "Dwarka Darshan", index }
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                color: "#94a3b8",
+                color: "#64748b",
                 fontSize: "0.8rem",
               }}
             >
@@ -271,7 +271,7 @@ export default function PlaceCard({ place, tourTitle = "Dwarka Darshan", index }
               style={{
                 fontSize: "1rem",
                 fontWeight: 600,
-                color: "#d97706",
+                color: "#b45309",
                 marginTop: "2px",
               }}
             >
@@ -325,7 +325,7 @@ export default function PlaceCard({ place, tourTitle = "Dwarka Darshan", index }
               style={{
                 fontSize: "0.75rem",
                 fontWeight: 700,
-                color: "#94a3b8",
+                color: "#64748b",
                 textTransform: "uppercase",
                 letterSpacing: "0.05em",
                 marginBottom: "8px",

@@ -154,7 +154,7 @@ export default function LanguageSelector({ variant = "navbar", onSelect }) {
                   className="notranslate"
                   style={{
                     fontSize: "0.6875rem",
-                    color: isActive ? "#d97706" : "#64748b",
+                    color: isActive ? "#b45309" : "#64748b",
                     fontWeight: 500,
                   }}
                 >
@@ -226,7 +226,7 @@ export default function LanguageSelector({ variant = "navbar", onSelect }) {
               padding: "6px 8px",
               fontSize: "0.7rem",
               fontWeight: 700,
-              color: "#94a3b8",
+              color: "#64748b",
               textTransform: "uppercase",
               letterSpacing: "0.05em",
               borderBottom: "1px solid #f1f5f9",

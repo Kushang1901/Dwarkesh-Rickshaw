@@ -437,7 +437,7 @@ export default function FloatingActions() {
                   padding: "9px 12px",
                   fontSize: "0.8125rem",
                   fontWeight: 600,
-                  color: "#d97706",
+                  color: "#b45309",
                   backgroundColor: "#fffbeb",
                   border: "1px solid #fde68a",
                   borderRadius: "10px",

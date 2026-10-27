@@ -98,8 +98,10 @@ export default function LogoSpinner({
           }}
         >
           <img
-            src="/logo.jpg"
+            src="/logo.webp"
             alt="Dwarkesh Logo"
+            width={logoSize}
+            height={logoSize}
             style={{
               width: "100%",
               height: "100%",
@@ -137,7 +139,7 @@ export default function LogoSpinner({
               marginTop: "5px",
               fontSize: "0.8125rem",
               fontWeight: 600,
-              color: "#d97706",
+              color: "#b45309",
             }}
           >
             <span>{displaySubtitle}</span>

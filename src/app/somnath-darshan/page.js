@@ -88,7 +88,7 @@ export default function SomnathDarshanPage() {
               }}
             >
               Somnath Darshan Tour Package
-              <span style={{ display: "block", color: "#0284c7", fontSize: "1.7rem", fontWeight: 700, marginTop: "6px" }}>
+              <span style={{ display: "block", color: "#0369a1", fontSize: "1.7rem", fontWeight: 700, marginTop: "6px" }}>
                 सोमनाथ दर्शन (द्वारका से सोमनाथ पवित्र यात्रा)
               </span>
             </h1>

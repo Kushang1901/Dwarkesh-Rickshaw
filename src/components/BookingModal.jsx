@@ -124,7 +124,7 @@ export default function BookingModal() {
                 gap: "6px",
                 fontSize: "0.75rem",
                 fontWeight: 700,
-                color: "#d97706",
+                color: "#b45309",
                 backgroundColor: "#fffbeb",
                 padding: "3px 10px",
                 borderRadius: "9999px",
@@ -340,7 +340,7 @@ export default function BookingModal() {
               <span style={{ display: "flex", alignItems: "center", gap: "5px" }}>
                 <Car size={14} color="#d97706" /> Vehicle Service *
               </span>
-              <span style={{ fontSize: "0.72rem", color: "#16a34a", fontWeight: 700 }}>
+              <span style={{ fontSize: "0.72rem", color: "#15803d", fontWeight: 700 }}>
                 Provided as per number of persons
               </span>
             </label>
@@ -537,7 +537,7 @@ export default function BookingModal() {
             style={{
               textAlign: "center",
               fontSize: "0.75rem",
-              color: "#94a3b8",
+              color: "#64748b",
               marginTop: "10px",
             }}
           >
