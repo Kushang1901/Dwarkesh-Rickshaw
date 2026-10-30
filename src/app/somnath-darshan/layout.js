@@ -12,7 +12,7 @@ export const metadata = {
     "Dwarka Riksha",
     "Dwarkesh Riksha",
     "Dwarka Tour Service",
-    "Dwarkesh Tour Service",
+    "Dwarkesh Riksha Service",
     "Ashokbhai Chavda",
     "Dwarka to Somnath tour",
     "Somnath Darshan cab",
@@ -27,7 +27,7 @@ export const metadata = {
     canonical: "/somnath-darshan",
   },
   openGraph: {
-    title: "Dwarka to Somnath Darshan Coastal Tour | Dwarkesh Tour",
+    title: "Dwarka to Somnath Darshan Coastal Tour | Dwarkesh Riksha",
     description:
       "Journey along Saurashtra's coastal trail from Dwarka to the first Jyotirlinga at Somnath. Auto Ricksha & 4-Wheeler Car options available.",
     url: `${SITE_URL}/somnath-darshan`,

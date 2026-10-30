@@ -18,18 +18,18 @@ export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "Dwarkesh Riksha & Tour Service | Dwarka Tour by Ashokbhai Chavda",
-    template: "%s | Dwarkesh Tour & Dwarka Riksha Service",
+    template: "%s | Dwarkesh Riksha Service",
   },
   description:
-    "Official Dwarkesh Tour & Dwarka Riksha Service by Ashokbhai Chavda (Teen Batti Chowk, Dwarka). Best Dwarka Tour Service for 8 sacred places Dwarka Darshan & Somnath tour by Auto Riksha & 4-Wheeler Car. Direct WhatsApp booking.",
+    "Official Dwarkesh Riksha Service by Ashokbhai Chavda (Teen Batti Chowk, Dwarka). Best Dwarka Tour Service for 8 sacred places Dwarka Darshan & Somnath tour by Auto Riksha & 4-Wheeler Car. Direct WhatsApp booking.",
   keywords: [
     "Dwarka Riksha",
     "Dwarkesh Riksha",
     "Dwarka Tour Service",
-    "Dwarkesh Tour Service",
+    "Dwarkesh Riksha Service",
     "Ashokbhai Chavda",
     "Ashokbhai Chavda Dwarka",
-    "Dwarkesh Tour",
+    "Dwarkesh Riksha Tour",
     "Dwarka Riksha Service",
     "Dwarkesh Riksha Teen Batti Chowk",
     "Dwarka Darshan Auto Riksha",
@@ -48,9 +48,9 @@ export const metadata = {
     "દ્વારકા ટૂર",
     "અશોકભાઈ ચાવડા દ્વારકા",
   ],
-  authors: [{ name: "Ashokbhai Chavda - Dwarkesh Tour", url: SITE_URL }],
+  authors: [{ name: "Ashokbhai Chavda - Dwarkesh Riksha", url: SITE_URL }],
   creator: "Ashokbhai Chavda",
-  publisher: "Dwarkesh Tour",
+  publisher: "Dwarkesh Riksha",
   formatDetection: {
     telephone: true,
     address: true,
@@ -60,23 +60,23 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Dwarkesh Tour | Dwarka & Somnath Darshan Tour Service",
+    title: "Dwarkesh Riksha | Dwarka & Somnath Darshan Tour Service",
     description:
       "Complete Dwarka Darshan (8 sacred places) & Somnath coastal tour. Auto Riksha & 4-Wheeler Car available as per family size. Direct booking with Ashokbhai Chavda at Teen Batti Chowk, Dwarka.",
     url: SITE_URL,
-    siteName: "Dwarkesh Tour",
+    siteName: "Dwarkesh Riksha",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Dwarkesh Tour - Dwarka & Somnath Darshan Tour Service",
+        alt: "Dwarkesh Riksha - Dwarka & Somnath Darshan Tour Service",
       },
       {
         url: "/logo.jpg",
         width: 1024,
         height: 1024,
-        alt: "Dwarkesh Tour Official Logo",
+        alt: "Dwarkesh Riksha Official Logo",
       },
     ],
     locale: "en_IN",
@@ -84,7 +84,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dwarkesh Tour | Dwarka & Somnath Darshan Tour Service",
+    title: "Dwarkesh Riksha | Dwarka & Somnath Darshan Tour Service",
     description:
       "Complete 8 sacred places Dwarka Darshan & Somnath tour by Auto Riksha and 4-Wheeler Car. Teen Batti Chowk, Dwarka. Book on WhatsApp.",
     images: ["/og-image.jpg"],

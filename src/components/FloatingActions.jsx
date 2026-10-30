@@ -233,7 +233,7 @@ export default function FloatingActions() {
                 </div>
                 <div>
                   <div style={{ fontWeight: 800, fontSize: "0.95rem", display: "flex", alignItems: "center", gap: "6px" }}>
-                    <span>Dwarkesh Tour Desk</span>
+                    <span>Dwarkesh Riksha Desk</span>
                   </div>
                   <div style={{ fontSize: "0.75rem", color: "#bae6fd", display: "flex", alignItems: "center", gap: "6px" }}>
                     <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#4ade80" }} />

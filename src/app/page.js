@@ -89,7 +89,7 @@ export default function HomePage() {
               }}
             >
               <Car size={15} color="#b45309" />
-              <span>Dwarkesh Tour &amp; Riksha Service • Ashokbhai Chavda • {OWNER_INFO.location}</span>
+              <span>Dwarkesh Riksha Service • Ashokbhai Chavda • {OWNER_INFO.location}</span>
             </div>
 
             {/* Headline */}
@@ -127,7 +127,7 @@ export default function HomePage() {
                 margin: "0 auto 32px",
               }}
             >
-              Welcome to Devbhumi Dwarka! <strong>Dwarkesh Tour &amp; Riksha Service</strong>, operated directly by <strong>Ashokbhai Chavda</strong> at Teen Batti Chowk, is your premier <strong>Dwarka Riksha</strong> and local <strong>Dwarka Tour Service</strong>. Enjoy clean, punctual, and well-guided pilgrimage tours covering sacred Jyotirlingas, coastal temples, and scenic beaches. For visiting places, <strong>4-wheeler car service is provided along with rickshaw as per the respected number of persons</strong> in your family.
+              Welcome to Devbhumi Dwarka! <strong>Dwarkesh Riksha Service</strong>, operated directly by <strong>Ashokbhai Chavda</strong> at Teen Batti Chowk, is your premier <strong>Dwarka Riksha</strong> and local <strong>Dwarka Tour Service</strong>. Enjoy clean, punctual, and well-guided pilgrimage tours covering sacred Jyotirlingas, coastal temples, and scenic beaches. For visiting places, <strong>4-wheeler car service is provided along with rickshaw as per the respected number of persons</strong> in your family.
             </p>
 
             {/* Action Buttons */}
@@ -591,7 +591,7 @@ export default function HomePage() {
               <ShieldCheck size={13} /> DWARKESH RIKSHA COMMITMENT
             </span>
             <h2 className="section-title">
-              Why Pilgrims Choose Dwarkesh Tour &amp; Dwarka Riksha Service
+              Why Pilgrims Choose Dwarkesh Riksha Service
             </h2>
             <p className="section-subtitle" style={{ margin: "0 auto" }}>
               Experience the genuine hospitality, punctuality, and local temple knowledge of Ashokbhai Chavda.

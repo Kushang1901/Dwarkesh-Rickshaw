@@ -1,9 +1,9 @@
 export default function manifest() {
   return {
-    name: "Dwarkesh Tour | Dwarka & Somnath Darshan Service",
-    short_name: "Dwarkesh Tour",
+    name: "Dwarkesh Riksha | Dwarka & Somnath Darshan Service",
+    short_name: "Dwarkesh Riksha",
     description:
-      "Official website of Dwarkesh Tour & Rickshaw Service (Teen Batti Chowk, Dwarka). Dwarka Darshan (8 sacred places) and Somnath coastal tour.",
+      "Official website of Dwarkesh Riksha Service (Teen Batti Chowk, Dwarka). Dwarka Darshan (8 sacred places) and Somnath coastal tour.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

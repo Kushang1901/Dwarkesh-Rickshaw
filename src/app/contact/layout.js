@@ -1,17 +1,17 @@
 import { getBreadcrumbSchema, SITE_URL } from "@/utils/seoStructuredData";
 
 export const metadata = {
-  title: "Contact Ashokbhai Chavda | Dwarka Riksha & Dwarkesh Tour Service",
+  title: "Contact Ashokbhai Chavda | Dwarkesh Riksha Service",
   description:
-    "Contact Dwarkesh Tour & Dwarka Riksha Service directly with Ashokbhai Chavda. Stand location: Teen Batti Chowk, Dwarka, Gujarat. Call or WhatsApp +91 99981 51725 for instant tour booking.",
+    "Contact Dwarkesh Riksha Service directly with Ashokbhai Chavda. Stand location: Teen Batti Chowk, Dwarka, Gujarat. Call or WhatsApp +91 99981 51725 for instant tour booking.",
   keywords: [
     "Dwarka Riksha",
     "Dwarkesh Riksha",
     "Dwarka Tour Service",
-    "Dwarkesh Tour Service",
+    "Dwarkesh Riksha Service",
     "Ashokbhai Chavda",
     "Ashokbhai Chavda Dwarka",
-    "Contact Dwarkesh Tour",
+    "Contact Dwarkesh Riksha",
     "Dwarka rickshaw stand contact number",
     "Ashokbhai Chavda Dwarka phone number",
     "Teen Batti Chowk Dwarka tour contact",
@@ -22,7 +22,7 @@ export const metadata = {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Contact & WhatsApp Booking | Dwarkesh Tour Dwarka",
+    title: "Contact & WhatsApp Booking | Dwarkesh Riksha Dwarka",
     description:
       "Direct WhatsApp and phone booking with Ashokbhai Chavda at Teen Batti Chowk, Dwarka. Call +91 99981 51725.",
     url: `${SITE_URL}/contact`,
@@ -31,7 +31,7 @@ export const metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact Dwarkesh Tour Dwarka",
+        alt: "Contact Dwarkesh Riksha Dwarka",
       },
     ],
   },

@@ -12,7 +12,7 @@ export const metadata = {
     "Dwarka Riksha",
     "Dwarkesh Riksha",
     "Dwarka Tour Service",
-    "Dwarkesh Tour Service",
+    "Dwarkesh Riksha Service",
     "Ashokbhai Chavda",
     "Ashokbhai Chavda Dwarka",
     "Dwarka Darshan",
@@ -30,7 +30,7 @@ export const metadata = {
     canonical: "/dwarka-darshan",
   },
   openGraph: {
-    title: "Dwarka Darshan Tour (8 Sacred Places) | Dwarkesh Tour",
+    title: "Dwarka Darshan Tour (8 Sacred Places) | Dwarkesh Riksha",
     description:
       "Visit all 8 sacred places in Dwarka with local expert guide Ashokbhai Chavda. Auto Rickshaws and 4-Wheeler Cars available.",
     url: `${SITE_URL}/dwarka-darshan`,
